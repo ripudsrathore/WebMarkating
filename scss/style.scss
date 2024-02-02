@@ -1,0 +1,164 @@
+@import "globals/mixin.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+// container
+.max-width-container {
+  padding: 0 80px;
+  max-width: 1320px;
+  @media only screen and (max-width: 767px) {
+    padding: 0 30px;
+  }
+}
+.inner-container {
+  margin: 0 auto;
+}
+// container
+
+// herosection
+.hero {
+  background-image: url("/images/bg-1.jpg");
+  @include bg-imag;
+
+  .hero-top-title {
+    @include flex-coloum;
+    span {
+      font-size: 24px;
+      color: $light-color;
+      font-weight: 500;
+      @media only screen and (max-width: 767px) {
+        font-size: $anchore-text;
+      }
+    }
+  }
+  .hero-main-heading {
+    @include flex-coloum;
+    span {
+      color: $light-color;
+      font-size: $h1;
+      line-height: 195px;
+      font-weight: 500;
+      @media only screen and (max-width: 767px) {
+        font-size: 64px;
+        line-height: 95px;
+      }
+    }
+  }
+  .hero-text {
+    color: $light-color;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 52px;
+    @media only screen and (max-width: 767px) {
+      font-size: 30px;
+    }
+    a {
+      @include anchore;
+      color: $light-color;
+    }
+  }
+}
+// herosection
+
+//section2
+.color-fill-heding {
+  .inner-content {
+    width: 40%;
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+    h4 {
+      font-size: $h4;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: $anchore-text;
+      line-height: 36px;
+    }
+    &.type-two {
+      h4 {
+        font-size: $h4;
+      }
+      a {
+        @include anchore;
+        color: $dark-color;
+        margin-top: 50px;
+      }
+    }
+    &.type-three {
+      h4 {
+        font-size: 80px;
+      }
+      a {
+        @include anchore;
+        color: $dark-color;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+//section2
+
+// imagesection
+.portfolio-image-section {
+  .image-large {
+    width: 110%;
+    .image-item {
+      width: 105%;
+      height: auto;
+    }
+  }
+  .image-small {
+    width: 100%;
+    .image-item {
+      width: 65%;
+      height: auto;
+    }
+  }
+  &.section-two {
+    margin-top: 225px;
+  }
+}
+
+.scroll-gallary {
+  overflow: hidden;
+  background-color: black;
+  height: 110vw;
+  .inner-container {
+    position: absolute;
+    padding: 0 150px;
+  }
+  .scroll-gallary-text {
+    padding: 100px 0;
+    text-align: center;
+    color: $light-color;
+
+    h1 {
+      font-size: 170px;
+    }
+    p {
+      margin-top: 30px;
+      padding-top: 20px;
+      font-size: 24px;
+      border-top: 1px solid grey;
+    }
+  }
+  .gallary-image {
+    .image-block {
+      margin-top: 30px;
+     display: flex;
+      &.image-right{
+        justify-content: start;
+      }
+      &.image-left{
+        justify-content: end;
+      }
+    }
+    img {
+      width: 50%;
+      margin-top: 150px;
+      border-radius: 5px;
+    }
+  }
+}
