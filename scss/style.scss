@@ -23,6 +23,14 @@
 
   .hero-top-title {
     @include flex-coloum;
+
+    .arrow-icon {
+      i {
+        color: #f7f7f7;
+        font-size: 30px;
+        transform: rotate(45deg);
+      }
+    }
     span {
       font-size: 24px;
       color: $light-color;
@@ -147,11 +155,11 @@
   .gallary-image {
     .image-block {
       margin-top: 30px;
-     display: flex;
-      &.image-right{
+      display: flex;
+      &.image-right {
         justify-content: start;
       }
-      &.image-left{
+      &.image-left {
         justify-content: end;
       }
     }
