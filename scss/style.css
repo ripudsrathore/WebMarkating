@@ -35,11 +35,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.hero .hero-top-title .arrow-icon i {
-  color: #f7f7f7;
-  font-size: 30px;
-  transform: rotate(45deg);
-}
 .hero .hero-top-title span {
   font-size: 24px;
   color: white;
