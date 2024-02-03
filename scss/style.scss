@@ -30,7 +30,14 @@ body {
 
   .hero-top-title {
     @include flex-coloum;
-    @include top-title;
+    span {
+      font-size: 24px;
+      color: $light-color;
+      font-weight: 500;
+      @media only screen and (max-width: 767px) {
+        font-size: $anchore-text;
+      }
+    }
   }
   .hero-main-heading {
     @include flex-coloum;
