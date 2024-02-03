@@ -1,0 +1,43 @@
+ <!-- Footer-start-->
+      <div class="footer">
+        <div class="max-width-container">
+        <div class="hero-top-title footer-top-title footer-inner-container">
+          <i
+            class="fa-solid fa-arrow-right fa-lg mt-5"
+            style="color: #f7f7f7"
+          ></i>
+          <span
+            >
+            About our Agency
+          </span>
+        </div>
+      </div>
+        <!-- section3 rolling-text-->
+        <div class="wrapperRollingText rolling-Text-white ">
+          <div class="rollingText text">
+            Make brands attractive and connect them to their audiences.
+          </div>
+        </div>
+        <!-- section3 rolling-text -->
+        <div class="social-share max-width-container inner-container" style="color: #f7f7f7;">
+          <div class="back-to-top">Back to top</div>
+          <div class="copyright"><span>2022 © </span><span></span><span></span>. All rights reserved.</div>
+          <div class="social-share">dsffff</div>
+        </div>
+      </div>
+      <!-- Footer-end -->
+
+       <!-- section7 -->
+      <div
+        class="color-fill-heding half max-width-container inner-container mt-5"
+      >
+        <div class="inner-content type-three">
+          <h4><span>News</span></h4>
+          <h4><span>Featured.</span></h4>
+          <p>
+            The driving force of all speeches, we believe that creation should
+            be the point around which any communication strategy revolves..
+          </p>
+        </div>
+      </div>
+      <!-- section7 -->
