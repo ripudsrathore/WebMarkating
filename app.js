@@ -3,8 +3,8 @@ gsap.registerPlugin(ScrollTrigger);
 // Rolling-Text-stat
 let direction = 1; // 1 = forward, -1 = backward scroll
 
-const roll1 = roll(".rollingText", { duration: 20 }, true),
-  roll2 = roll(".rollingText02", { duration: 20 }),
+const roll1 = roll(".rollingText", { duration: 10 }),
+  roll2 = roll(".rollingText02", { duration: 10 }, true),
   scroll = ScrollTrigger.create({
     onUpdate(self) {
       if (self.direction !== direction) {
@@ -38,7 +38,7 @@ function roll(targets, vars, reverse) {
 }
 // Rolling-Text-end
 
-// scroll-gallrey-start
+//2 scroll-gallrey-start
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".scroll-gallary-text", {
@@ -68,19 +68,43 @@ gsap.to(".scroll-image", {
   ease: Linear.easeNone,
 });
 // scroll-gallrey-end
-//color-fill-text-start
-const textElements = gsap.utils.toArray('.color-text');
-  
-  textElements.forEach(text => {
-    gsap.to(text, {
-      backgroundSize: '100%',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: text,
-        start: 'center 80%',
-        end: 'center 10%',
-        scrub: true,
-      },
-    });
+//3color-fill-text-start
+const textElements = gsap.utils.toArray(".color-text");
+
+textElements.forEach((text) => {
+  gsap.to(text, {
+    backgroundSize: "100%",
+    ease: "none",
+    scrollTrigger: {
+      trigger: text,
+      start: "center 80%",
+      end: "center 10%",
+      scrub: true,
+    },
   });
+});
 //color-fill-text-end
+
+//4 Card image
+
+gsap.to(".smallimg", {
+  scrollTrigger: {
+    trigger: ".section-one ",
+    start: "top ",
+   
+    scrub: 1,
+    marks: true,
+  },
+  y: -250,
+  dureation: 5,
+});
+gsap.to(".second-smallimg", {
+    scrollTrigger: {
+      trigger: ".section-two ",
+      start: "top ",
+      scrub: 1,
+      marks: true,
+    },
+    y: -250,
+    dureation: 5,
+  });
