@@ -3,9 +3,6 @@
   margin: 0;
   padding: 0;
 }
-body {
-  overflow-x: hidden;
-}
 // container
 .max-width-container {
   padding: 0 80px;
@@ -17,25 +14,27 @@ body {
 .inner-container {
   margin: 0 auto;
 }
-.footer-inner-container {
-  margin-left: 100px;
-}
 // container
 
 // herosection
-
 .hero {
   background-image: url("/images/bg-1.jpg");
   @include bg-imag;
 
+  #scroll-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+  /*   background-color: #3498db; */
+    color: #000;
+    border: none;
+    cursor: pointer;
+  }
+
+
   .hero-top-title {
     @include flex-coloum;
-    // arrow icon CSS
-    & i {
-      color: #f7f7f7;
-      font-size: 30px;
-      transform: rotate(45deg);
-    }
     span {
       font-size: 24px;
       color: $light-color;
@@ -81,15 +80,6 @@ body {
     @media only screen and (max-width: 767px) {
       width: 100%;
     }
-    .color-text {
-      padding: 10px 0;
-      color: rgb(182, 182, 182, 0.2);
-      background: linear-gradient(to right, black, black) no-repeat;
-      -webkit-background-clip: text;
-      background-clip: text;
-      background-size: 0%;
-      transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.9s;
-    }
     h4 {
       font-size: $h4;
       margin-bottom: 15px;
@@ -120,7 +110,8 @@ body {
     }
   }
 }
-//section2end
+//section2
+
 
 // section3
 .wrapperRollingText {
@@ -137,6 +128,9 @@ body {
 // section3end
 
 // section4
+
+// imagesection
+
 .portfolio-image-section {
   .image-large {
     width: 110%;
@@ -162,38 +156,22 @@ body {
     margin-top: 225px;
   }
 }
-//section4end
+
 .scroll-gallary {
   overflow: hidden;
   background-color: black;
-  height: 100vw;
-  @media (max-width: 768px) {
-    height: 180vw;
-  }
+  height: 110vw;
   .inner-container {
     position: absolute;
     padding: 0 150px;
-    @media (max-width: 768px) {
-      padding: 0 30px;
-    }
   }
   .scroll-gallary-text {
-    position: relative;
-    z-index: 1;
     padding: 100px 0;
     text-align: center;
     color: $light-color;
-    @media (max-width: 768px) {
-      padding: 60px 0;
-    }
-    h5 {
-      font-size: 22px;
-    }
+
     h1 {
       font-size: 170px;
-      @media (max-width: 768px) {
-        font-size: 70px;
-      }
     }
     p {
       margin-top: 30px;
@@ -217,26 +195,6 @@ body {
       width: 50%;
       margin-top: 150px;
       border-radius: 5px;
-      @media (max-width: 768px) {
-        margin-top: 100px;
-      }
     }
-  }
-}
-
-//footer
-.footer {
-  background-color: black;
-  .hero-top-title {
-    @include top-title;
-    @include flex-coloum;
-    color: $light-color;
-    span {
-      margin-top: 35px;
-    }
-  }
-  .social-share {
-    display: flex;
-    justify-content: space-between;
   }
 }
