@@ -30,6 +30,12 @@ body {
 
   .hero-top-title {
     @include flex-coloum;
+    // arrow icon CSS
+    & i {
+      color: #f7f7f7;
+      font-size: 30px;
+      transform: rotate(45deg);
+    }
     span {
       font-size: 24px;
       color: $light-color;
@@ -123,7 +129,6 @@ body {
     font-size: $h1;
     font-weight: 500;
     display: inline-block;
- 
   }
   &.rolling-Text-white {
     color: wheat;
@@ -145,8 +150,8 @@ body {
     display: flex;
     align-items: self-end;
     justify-content: flex-end;
-    &.second-smallimg{
-      justify-content:space-between;
+    &.second-smallimg {
+      justify-content: space-between;
     }
     .image-item {
       width: 65%;
