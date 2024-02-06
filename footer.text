@@ -41,3 +41,17 @@
         </div>
       </div>
       <!-- section7 -->
+
+      <div class="swiper-item">
+            <div class="swiper-card card">
+              <img src="images/news01.jpg" alt="" />
+              <div class="card-content">
+                <ul class="card-content-link-container">
+                  <li class="card-content-link">link</li>
+
+                  <li class="card-content-link">link</li>
+                </ul>
+                <p>Lorem ipsum dolor sit,amet elit. Deserunt voluptatum</p>
+              </div>
+            </div>
+          </div>

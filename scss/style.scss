@@ -123,7 +123,6 @@ body {
     font-size: $h1;
     font-weight: 500;
     display: inline-block;
- 
   }
   &.rolling-Text-white {
     color: wheat;
@@ -145,8 +144,8 @@ body {
     display: flex;
     align-items: self-end;
     justify-content: flex-end;
-    &.second-smallimg{
-      justify-content:space-between;
+    &.second-smallimg {
+      justify-content: space-between;
     }
     .image-item {
       width: 65%;
@@ -233,5 +232,44 @@ body {
   .social-share {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+//section8_swiper
+.Swapper {
+  margin-bottom: 1000px;
+  .items {
+    flex-wrap: nowrap;
+    display: flex;
+    gap: 15px;
+    padding: 0%;
+    .swapper-item {
+      max-width: 410px;
+      position: relative;
+      list-style: none;
+      .card-content {
+        position: absolute;
+        bottom: 0;
+        color: $light-color;
+        padding: 30px;
+        font-weight: 400;
+        &.card-dark-text {
+          color: pink;
+        }
+        .card-content-link-container {
+          display: flex;
+          list-style: none;
+          padding: 0;
+          gap: 20px;
+          .card-content-link {
+            font-size: 18px;
+          }
+        }
+        p {
+          margin-top: 15px;
+          font-size: 24px;
+        }
+      }
+    }
   }
 }

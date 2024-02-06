@@ -257,4 +257,42 @@ body {
 .footer .social-share {
   display: flex;
   justify-content: space-between;
+}
+
+.Swapper {
+  margin-bottom: 1000px;
+}
+.Swapper .items {
+  flex-wrap: nowrap;
+  display: flex;
+  gap: 15px;
+  padding: 0%;
+}
+.Swapper .items .swapper-item {
+  max-width: 410px;
+  position: relative;
+  list-style: none;
+}
+.Swapper .items .swapper-item .card-content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 30px;
+  font-weight: 400;
+}
+.Swapper .items .swapper-item .card-content.card-dark-text {
+  color: pink;
+}
+.Swapper .items .swapper-item .card-content .card-content-link-container {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+.Swapper .items .swapper-item .card-content .card-content-link-container .card-content-link {
+  font-size: 18px;
+}
+.Swapper .items .swapper-item .card-content p {
+  margin-top: 15px;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */
