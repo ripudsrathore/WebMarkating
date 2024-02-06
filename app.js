@@ -1,4 +1,39 @@
+//  READ MORE UNDERLINE ANIMATIO0N
+var tl = gsap.timeline({ paused: true });
+var animation = tl.fromTo(
+  ".underline",
+  {
+    width: "100%",
+  },
+  {
+    width: 0,
+    right: "30%",
+    duration: 1,
+    ease: "power1.inOut",
+  }
+);
+
+document.querySelectorAll(".js-work-link").forEach(function (element) {
+  element.addEventListener("mouseenter", function () {
+    animation.play();
+  });
+  element.addEventListener("mouseleave", function () {
+    animation.reverse();
+  });
+});
+
 gsap.registerPlugin(ScrollTrigger);
+
+gsap.registerPlugin(ScrollToPlugin);
+const scrollButton = document.querySelector("#scroll-button");
+const sectionCases = document.querySelector("#scroll-funt");
+scrollButton.addEventListener("click", () => {
+  console.warn(sectionCases);
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: sectionCases,
+  });
+});
 
 // Rolling-Text-stat
 let direction = 1; // 1 = forward, -1 = backward scroll
@@ -91,7 +126,7 @@ gsap.to(".smallimg", {
   scrollTrigger: {
     trigger: ".section-one ",
     start: "top ",
-   
+
     scrub: 1,
     marks: true,
   },
@@ -139,3 +174,14 @@ gsap.to(container, {
 
 
 // swiper end
+// =======
+//   scrollTrigger: {
+//     trigger: ".section-two ",
+//     start: "top ",
+//     scrub: 1,
+//     marks: true,
+//   },
+//   y: -250,
+//   dureation: 5,
+// });
+// >>>>>>> 227535bce1ef1150935aaaa33f744616b0d4f2d9
