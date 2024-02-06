@@ -1,3 +1,27 @@
+//  READ MORE UNDERLINE ANIMATIO0N
+var tl = gsap.timeline({ paused: true });
+var animation = tl.fromTo(
+  ".underline",
+  {
+    width: "100%",
+  },
+  {
+    width: 0,
+    right: "30%",
+    duration: 1,
+    ease: "power1.inOut",
+  }
+);
+
+document.querySelectorAll(".js-work-link").forEach(function (element) {
+  element.addEventListener("mouseenter", function () {
+    animation.play();
+  });
+  element.addEventListener("mouseleave", function () {
+    animation.reverse();
+  });
+});
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Rolling-Text-stat
@@ -91,7 +115,7 @@ gsap.to(".smallimg", {
   scrollTrigger: {
     trigger: ".section-one ",
     start: "top ",
-   
+
     scrub: 1,
     marks: true,
   },
@@ -99,12 +123,12 @@ gsap.to(".smallimg", {
   dureation: 5,
 });
 gsap.to(".second-smallimg", {
-    scrollTrigger: {
-      trigger: ".section-two ",
-      start: "top ",
-      scrub: 1,
-      marks: true,
-    },
-    y: -250,
-    dureation: 5,
-  });
+  scrollTrigger: {
+    trigger: ".section-two ",
+    start: "top ",
+    scrub: 1,
+    marks: true,
+  },
+  y: -250,
+  dureation: 5,
+});
